@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CS1300 Portfolio</title>
+
+    <!-- CSS / Bootstrap. Using 5.0 but referenced 4.0 guide throughout with some minor changes -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="css/cs1300.css" rel="stylesheet" />
+
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <div style="overflow: hidden">
+      <!-- Bootstrap Navbar: https://getbootstrap.com/docs/4.0/components/navbar/ -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Responsive Redesign</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="menu">
+            <ul class="navbar-nav mb-4 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link disabled" href="#" aria-disabled="true">Home</a>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  href="https://global.yamaha-motor.com/showroom/event/tokyo-motorshow-2019-bs/"
+                  >Original Website</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#usability">Usability Problems</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#prototype">Prototypes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#redesigned">Redesigned Website</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- Responsive Redesign assignment -->
+    <section id="usability">
+      <div class="container content-section">
+        <div class="row">
+          <div class="col-lg-12 mt-5">
+            <h1 class="assignment-title">Responsive Redesign</h1>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Identifying Usability Problems</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link text-center">
+                <p>
+                  <a href="https://global.yamaha-motor.com/showroom/event/tokyo-motorshow-2019-bs/" target="_blank"
+                    >This</a
+                  >
+                  is the link to the Original Website. You can also see the below embedded website, and the screenshot
+                  of it. This website is extremely simple and has a style from early 2000s, but it has major problems
+                  with the UI placement especially when changing the screen size, which is the reason why I decided to
+                  redesign thispage.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="mx-auto ratio ratio-16x9 w-75" style="margin-bottom: 15px">
+                <iframe
+                  src="https://global.yamaha-motor.com/showroom/event/tokyo-motorshow-2019-bs/"
+                  title="Yamaha Motor Original Website"
+                ></iframe>
+              </div>
+              <div class="text-center" style="margin-bottom: 25px">
+                <figcaption>Embedded original website</figcaption>
+              </div>
+              <br />
+              <div class="text-center w-100">
+                <img
+                  class="website-scrennshot"
+                  src="img/original-website.png"
+                  alt="Screenshot of the Original Website"
+                  style="margin-bottom: 15px"
+                />
+                <figcaption>Screenshot of the Original Website</figcaption>
+              </div>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="assignment-section">Problems With the Current Website Design</h3>
+            </div>
+          </div>
+          <div id="questions" class="row inset-box">
+            <div class="question-box-opaque">
+              <ul class="col-md-12">
+                <div class="container">
+                  <li>
+                    There is a youtube video link on the website, but the user has to leave the webpage to view it.
+                    Since we want to use less internet usage in the case when the user is on phone, we want to just show
+                    the youtube on the page when the user is on PC (the screen size is at least the size of standard
+                    PC).
+                  </li>
+                  <li>Font size for the language selector is small</li>
+                  <li>Navigation bar / menu does not collapse when the screen size changes</li>
+                  <li>Horizontal scroll is required in some cases to view the full page in some cases.</li>
+                  <li>
+                    The Information section is located towards the bottom of the page. Important information should be
+                    placed towards the top so that the user can easily view it.
+                  </li>
+                  <li>The title scrolls from right to left, which seems to be unnecessary.</li>
+                  <li>Website has a heart-shape cursor, but this is making things even harder to read.</li>
+                  <li>The opacity of background image should be changed to make it easier to read the content.</li>
+                  <li>
+                    When the screen size changes, the main text takes up the entire width of the screen, making it hard
+                    to read.
+                  </li>
+                </div>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <br />
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="assignment-section">Accessibility</h3>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link text-center">
+                <p>
+                  I used
+                  <a
+                    href="https://wave.webaim.org/report#/https://global.yamaha-motor.com/showroom/event/tokyo-motorshow-2019-bs/"
+                    target="_blank"
+                    >WebAIM WAVE</a
+                  >
+                  to detect possible accessibility problems. WebAIM WAVE detected quite a lot of contrast problems on
+                  the website. I totally agree with this, and as I mentioned in the previous section, I believe that
+                  changing the text color and background opacity will improve the overall readability. Additionally, it
+                  alerts about the marquee element (scrolling content that the user can not stop). I believe that this
+                  is also decreasing the readability of the page. Lastly, layout table is being used in the website.
+                  This is some feature that should not be used in HTML5 according to WebAIM, which I agree with since it
+                  decreases the readability of the page if the screen size changes.
+                </p>
+              </div>
+              <div class="text-center w-100">
+                <img
+                  class="website-scrennshot"
+                  src="img/webaim.png"
+                  alt="Screenshot of the WebAIM result"
+                  style="margin-bottom: 15px"
+                />
+                <figcaption>Screenshot of the WebAIM Result</figcaption>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="prototype">
+      <br />
+      <div class="container content-section">
+        <div id="prototype-selector" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Prototypes: Low-fidelity Wireframing</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <p>
+                  Below are the three low-fidelity wireframes I came up with according to the problems I mentioned in
+                  the previous section.
+                </p>
+              </div>
+            </div>
+            <div class="col">
+              <button class="btn btn-primary m-2" onclick="showLowfiPrototype(1);">Show WireFrame for Phones</button>
+              <button class="btn btn-info m-2" onclick="showLowfiPrototype(2);">Show WireFrame for Tablets</button>
+              <button class="btn btn-success m-2" onclick="showLowfiPrototype(3);">Show WireFrame for Computers</button>
+            </div>
+          </div>
+
+          <div id="prototype-img" class="text-center" style="width: 100%">
+            <br />
+            <img class="prototype-img rounded mb-5" src="img/Phone.png" alt="Phone Wireframe" />
+            <br />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="style guide">
+      <div class="container content-section">
+        <div id="prototype-selector" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="assignment-section">Style Guides for My Design</h3>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <p>
+                  Since the project is mainly built using bootstrap, there are no customized buttons, and since we are
+                  using the same background as the original website, there are no changes to that. Below are the simple
+                  guidelines I have. For this reason, there are not many content in the figma embedding below. As a
+                  reference,
+                  <a href="https://www.figma.com/file/RniQ1DGPR844f9Mc6Ng34W/Untitled?node-id=1%3A2" target="_blank">
+                    this</a
+                  >
+                  is the link to the design guides.
+                </p>
+                <strong>
+                  Pleae also view the hifi-prototype Figma in the below section as well since that also contains style
+                  guides.</strong
+                >
+              </div>
+            </div>
+            <div id="questions" class="row inset-box">
+              <div class="question-box-opaque">
+                <ul class="col-md-12">
+                  <div class="container">
+                    <li>font-family: Georgia, 'Times New Roman', Times, serif</li>
+                    <li>Navigation bar font size: large</li>
+                    <li>
+                      URL Link Color: Blue when not hovered, Red(#f00) and underlined when hovered. Does not change the
+                      text color after visiting the website
+                    </li>
+                    <li>All bootstrap containers have width of 75%</li>
+                    <li>
+                      Youtube thumbnail should only be visible when the screen is larger than 767px. Otherwise, just
+                      show the original png
+                    </li>
+                  </div>
+                </ul>
+              </div>
+            </div>
+            <div class="mx-auto ratio ratio-16x9 w-75 mb-5 mt-5">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRniQ1DGPR844f9Mc6Ng34W%2FUntitled%3Fnode-id%3D1%253A2"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="hifi-prototype">
+      <br />
+      <div class="container content-section">
+        <div id="prototype-selector" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Prototypes: High-fidelity Prototypes</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link">
+                <p>
+                  Below are the three high-fidelity prototypes I came up with according to the problems I mentioned in
+                  the previous section. As a reference,
+                  <a
+                    href="https://www.figma.com/file/aY77N14KGpYlNR2h8FDULc/hi-fi-prototypes?node-id=0%3A1"
+                    target="_blank"
+                  >
+                    this</a
+                  >
+                  is the link to the Figma high-fidelity prototype.
+                </p>
+              </div>
+            </div>
+            <div class="mx-auto ratio ratio-16x9 w-75 mb-5">
+              <iframe
+                style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FaY77N14KGpYlNR2h8FDULc%2Fhi-fi-prototypes%3Fnode-id%3D37%253A2"
+                allowfullscreen
+              ></iframe>
+            </div>
+            <div class="col mb-5">
+              <!-- Bootstrap collapse: https://getbootstrap.com/docs/4.0/components/collapse/-->
+              <button
+                id="phone-prototype-button"
+                onclick="togglePhonePrototypeButton()"
+                class="btn btn-primary m-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#phone-prototype-collapse"
+                aria-expanded="false"
+                aria-controls="phone-prototype-collapse"
+              >
+                Hide Prototype for Phones
+              </button>
+              <button
+                id="tablet-prototype-button"
+                onclick="toggleTabletPrototypeButton()"
+                class="btn btn-info m-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#tablet-prototype-collapse"
+                aria-expanded="false"
+                aria-controls="tablet-prototype-collapse"
+              >
+                Hide Prototype for Tablets
+              </button>
+              <button
+                id="desktop-prototype-button"
+                onclick="togglePCPrototypeButton()"
+                class="btn btn-success m-2"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#desktop-prototype-collapse"
+                aria-expanded="false"
+                aria-controls="desktop-prototype-collapse"
+              >
+                Hide Prototype for Computers
+              </button>
+            </div>
+            <div class="collapse show multi-collapse" id="phone-prototype-collapse">
+              <div class="mx-auto ratio ratio-16x9 w-100 mb-5">
+                <iframe
+                  style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FaY77N14KGpYlNR2h8FDULc%2Fhi-fi-prototypes%3Fnode-id%3D0%253A3%26scaling%3Dmin-zoom%26page-id%3D0%253A1%26starting-point-node-id%3D0%253A3"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="collapse show multi-collapse" id="tablet-prototype-collapse">
+              <div class="mx-auto ratio ratio-16x9 w-100 mb-5">
+                <iframe
+                  style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FaY77N14KGpYlNR2h8FDULc%2Fhi-fi-prototypes%3Fnode-id%3D17%253A75%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D0%253A3"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <div class="collapse show multi-collapse" id="desktop-prototype-collapse">
+              <div class="mx-auto ratio ratio-16x9 w-100 mb-5">
+                <iframe
+                  style="border: 1px solid rgba(0, 0, 0, 0.1)"
+                  src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FaY77N14KGpYlNR2h8FDULc%2Fhi-fi-prototypes%3Fnode-id%3D17%253A117%26scaling%3Dscale-down-width%26page-id%3D0%253A1%26starting-point-node-id%3D0%253A3"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="redesigned">
+      <div class="container content-section">
+        <div id="persona-selector" class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="assignment-section fw-bold">Redesigned Website</h2>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 inline-link text-center">
+                <p>
+                  <a href="redesigned.html" target="_blank"> This</a>
+                  is the link to the Redesigned Website. You can also see the below embedded website.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="mx-auto ratio ratio-16x9 w-75">
+            <iframe src="redesigned.html" title="Yamaha Motor Redesigned Website"></iframe>
+          </div>
+          <br />
+          <br />
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

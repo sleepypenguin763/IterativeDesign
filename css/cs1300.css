@@ -1,0 +1,186 @@
+:root {
+  --heading-text-color: #f9f5f0;
+  --body-text-color: #f9f5f0;
+  --page-bg: #373737;
+  --question-box-bg: #212121;
+  --inset-box-bg: #292929;
+}
+
+* {
+  color: var(--body-text-color);
+  tab-size: 4;
+}
+
+body {
+  width: 100%;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: var(--page-bg);
+}
+
+html {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 6;
+}
+
+.navbar a {
+  transition: color .5s ease-in-out, box-shadow .5s ease-in-out;
+}
+
+.navbar a:hover {
+  box-shadow: inset 200px 0 0 0 rgb(119, 117, 117);
+}
+
+h1 {
+  margin: 35px 0;
+  font-weight: 400;
+  letter-spacing: 4px;
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-weight: 100;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+
+h3 {
+  font-weight: 50;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+
+p {
+  margin: 0 0 25px;
+  font-size: 15px;
+}
+
+.assignment-title {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--heading-text-color);
+  font-size: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.assignment-section {
+  font-size: 25px;
+}
+
+.website-scrennshot {
+  max-width: 75%;
+  max-height: 80%;
+}
+
+.prototype-img {
+  max-width: 80%;
+  height: auto;
+}
+
+.main-question-header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: var(--heading-text-color);
+}
+
+#questions li{
+  color: var(--heading-text-color);
+  width: 100%;
+  animation: fadeIn 5s;
+}
+
+#interviews li{
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.question-box-opaque {
+  background-color: var(--question-box-bg);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.inset-box {
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color:  var(--inset-box-bg);
+}
+
+/* link hover animation taken from https://css-tricks.com/css-link-hover-effects/*/
+.inline-link a {
+  box-shadow: inset 0 0 0 0 var(--body-text-color);
+  color: var(--body-text-color);
+  padding: 0 .25rem;
+  margin: 0 -.25rem;
+  transition: color .4s ease-in-out, box-shadow .4s ease-in-out;
+}
+
+.inline-link a:hover {
+  color: rgb(0, 0, 0);
+  box-shadow: inset 200px 0 0 0 var(--body-text-color);
+}
+
+ul {
+  font-size: 1.12em;
+  padding-left: 1.5em;
+  line-height: 2.0;
+}
+
+@media(min-width:800px) {
+  p {
+    margin: 0 0 30px;
+    font-size: 18px;
+  }
+
+  .content-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .inset-box {
+    padding: 40px;
+    border-radius: 15px;
+  }
+
+  .content-section:before {
+    margin-top: -60px;
+    margin-bottom: 40px;
+  }
+}
+
+@media(max-width:800px) {
+  html, body {
+    width: 100%;
+    overflow-x: hidden;
+    background-color: var(--page-bg);
+  }
+  
+  h1 {
+    margin: 15px 0;
+  }
+  
+  .assignment-title {
+    font-size: 30px;
+  }
+
+  .assignment-section {
+    font-size: 20px;
+  }
+  
+  .website-scrennshot, .prototype-img {
+    max-width: 80%;
+    height: auto;
+  }
+}
