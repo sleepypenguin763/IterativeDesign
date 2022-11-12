@@ -101,27 +101,3 @@ const showWireframe = (num) => {
   div.appendChild(img);
   gallery.append(div);
 };
-
-const togglePhonePrototypeButton = () => {
-  var button = document.getElementById("phone-prototype-button");
-  button.textContent =
-    button.textContent == "Show Prototype for Phones"
-      ? "Hide Prototype for Phones"
-      : "Show Prototype for Phones";
-};
-
-const toggleTabletPrototypeButton = () => {
-  var button = document.getElementById("tablet-prototype-button");
-  button.textContent =
-    button.textContent == "Show Prototype for Tablets"
-      ? "Hide Prototype for Tablets"
-      : "Show Prototype for Tablets";
-};
-
-const togglePCPrototypeButton = () => {
-  var button = document.getElementById("desktop-prototype-button");
-  button.textContent =
-    button.textContent == "Show Prototype for Computers"
-      ? "Hide Prototype for Computers"
-      : "Show Prototype for Computers";
-};
