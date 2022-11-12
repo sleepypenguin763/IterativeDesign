@@ -1,7 +1,7 @@
-const showLowfiPrototype = (num) => {
-  const gallery = document.getElementById("prototype-selector");
-  if (document.body.contains(document.getElementById("prototype-img"))) {
-    const child = document.getElementById("prototype-img");
+const showSketches = (num) => {
+  const gallery = document.getElementById("sketch-selector");
+  if (document.body.contains(document.getElementById("sketch-img"))) {
+    const child = document.getElementById("sketch-img");
     gallery.removeChild(child);
   }
 
@@ -10,24 +10,28 @@ const showLowfiPrototype = (num) => {
   let div = document.createElement("div");
   div.setAttribute("class", "text-center");
   div.setAttribute("style", "width:100%");
-  div.setAttribute("id", "prototype-img");
+  div.setAttribute("id", "sketch-img");
 
   let img = document.createElement("img");
   switch(num){
     case 1:
-      img.src = "img/Phone.png";
-      img.alt = "Phone Wireframe";
+      img.src = "img/sketch_1.jpg";
+      img.alt = "Sketch 1";
       break;
     case 2:
-      img.src = "img/Tablet.png";
-      img.alt = "Tablet Wireframe";
+      img.src = "img/sketch_2.jpg";
+      img.alt = "Sketch 2";
+      break;
+    case 3:
+      img.src = "img/sketch_3.jpg";
+      img.alt = "Sketch 3";
       break;
     default:
-      img.src = "img/PC.png";
-      img.alt = "Computer Wireframe";
+      img.src = "img/sketch_4.jpg";
+      img.alt = "Sketch 4";
       break;
   }
-  img.setAttribute("class", "prototype-img rounded mb-5");
+  img.setAttribute("class", "sketch-img rounded mb-5 w-100");
 
   div.append(br);
   div.appendChild(img);

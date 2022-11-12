@@ -23,7 +23,7 @@
       <!-- Bootstrap Navbar: https://getbootstrap.com/docs/4.0/components/navbar/ -->
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Responsive Redesign</a>
+          <a class="navbar-brand" href="#">Iterative Design</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -41,38 +41,34 @@
                 <a class="nav-link disabled" href="#" aria-disabled="true">Home</a>
               </li>
               <li class="nav-item">
-                <a
-                  class="nav-link active"
-                  href="https://global.yamaha-motor.com/showroom/event/tokyo-motorshow-2019-bs/"
-                  >Original Website</a
-                >
+                <a class="nav-link active" href="#startup">Startup</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#usability">Usability Problems</a>
+                <a class="nav-link active" href="#sketches">Sketching & Wireframing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#prototype">Prototypes</a>
+                <a class="nav-link active" href="#redesigned">Mockups</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#redesigned">Redesigned Website</a>
+                <a class="nav-link active" href="#redesigned">User Testing</a>
               </li>
             </ul>
           </div>
         </div>
       </nav>
     </div>
-    <!-- Responsive Redesign assignment -->
-    <section id="usability">
+    <!-- Iterative Design assignment -->
+    <section id="startup">
       <div class="container content-section">
         <div class="row">
           <div class="col-lg-12 mt-5">
-            <h1 class="assignment-title">Responsive Redesign</h1>
+            <h1 class="assignment-title">Iterative Design</h1>
           </div>
         </div>
         <div class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="assignment-section fw-bold">Identifying Usability Problems</h2>
+              <h2 class="assignment-section fw-bold">Startup Information</h2>
             </div>
           </div>
           <div class="container">
@@ -90,133 +86,38 @@
               </div>
             </div>
           </div>
-          <div class="container">
-            <div class="row">
-              <div class="mx-auto ratio ratio-16x9 w-75" style="margin-bottom: 15px">
-                <iframe
-                  src="https://global.yamaha-motor.com/showroom/event/tokyo-motorshow-2019-bs/"
-                  title="Yamaha Motor Original Website"
-                ></iframe>
-              </div>
-              <div class="text-center" style="margin-bottom: 25px">
-                <figcaption>Embedded original website</figcaption>
-              </div>
-              <br />
-              <div class="text-center w-100">
-                <img
-                  class="website-scrennshot"
-                  src="img/original-website.png"
-                  alt="Screenshot of the Original Website"
-                  style="margin-bottom: 15px"
-                />
-                <figcaption>Screenshot of the Original Website</figcaption>
-              </div>
-            </div>
-          </div>
-          <br />
-          <br />
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="assignment-section">Problems With the Current Website Design</h3>
-            </div>
-          </div>
-          <div id="questions" class="row inset-box">
-            <div class="question-box-opaque">
-              <ul class="col-md-12">
-                <div class="container">
-                  <li>
-                    There is a youtube video link on the website, but the user has to leave the webpage to view it.
-                    Since we want to use less internet usage in the case when the user is on phone, we want to just show
-                    the youtube on the page when the user is on PC (the screen size is at least the size of standard
-                    PC).
-                  </li>
-                  <li>Font size for the language selector is small</li>
-                  <li>Navigation bar / menu does not collapse when the screen size changes</li>
-                  <li>Horizontal scroll is required in some cases to view the full page in some cases.</li>
-                  <li>
-                    The Information section is located towards the bottom of the page. Important information should be
-                    placed towards the top so that the user can easily view it.
-                  </li>
-                  <li>The title scrolls from right to left, which seems to be unnecessary.</li>
-                  <li>Website has a heart-shape cursor, but this is making things even harder to read.</li>
-                  <li>The opacity of background image should be changed to make it easier to read the content.</li>
-                  <li>
-                    When the screen size changes, the main text takes up the entire width of the screen, making it hard
-                    to read.
-                  </li>
-                </div>
-              </ul>
-            </div>
-          </div>
-          <br />
-          <br />
-          <div class="row">
-            <div class="col-md-12">
-              <h3 class="assignment-section">Accessibility</h3>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-12 inline-link text-center">
-                <p>
-                  I used
-                  <a
-                    href="https://wave.webaim.org/report#/https://global.yamaha-motor.com/showroom/event/tokyo-motorshow-2019-bs/"
-                    target="_blank"
-                    >WebAIM WAVE</a
-                  >
-                  to detect possible accessibility problems. WebAIM WAVE detected quite a lot of contrast problems on
-                  the website. I totally agree with this, and as I mentioned in the previous section, I believe that
-                  changing the text color and background opacity will improve the overall readability. Additionally, it
-                  alerts about the marquee element (scrolling content that the user can not stop). I believe that this
-                  is also decreasing the readability of the page. Lastly, layout table is being used in the website.
-                  This is some feature that should not be used in HTML5 according to WebAIM, which I agree with since it
-                  decreases the readability of the page if the screen size changes.
-                </p>
-              </div>
-              <div class="text-center w-100">
-                <img
-                  class="website-scrennshot"
-                  src="img/webaim.png"
-                  alt="Screenshot of the WebAIM result"
-                  style="margin-bottom: 15px"
-                />
-                <figcaption>Screenshot of the WebAIM Result</figcaption>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <section id="prototype">
+    <section id="sketches">
       <br />
       <div class="container content-section">
-        <div id="prototype-selector" class="container">
+        <div id="sketch-selector" class="container">
           <div class="row">
             <div class="col-md-12">
-              <h2 class="assignment-section fw-bold">Prototypes: Low-fidelity Wireframing</h2>
+              <h2 class="assignment-section fw-bold">Sketches and wireframes</h2>
             </div>
           </div>
           <div class="container">
             <div class="row">
               <div class="col-sm-12 inline-link">
                 <p>
-                  Below are the three low-fidelity wireframes I came up with according to the problems I mentioned in
-                  the previous section.
+                  Below are the sketches we first came up with for our startup's application.
                 </p>
               </div>
             </div>
             <div class="col">
-              <button class="btn btn-primary m-2" onclick="showLowfiPrototype(1);">Show WireFrame for Phones</button>
-              <button class="btn btn-info m-2" onclick="showLowfiPrototype(2);">Show WireFrame for Tablets</button>
-              <button class="btn btn-success m-2" onclick="showLowfiPrototype(3);">Show WireFrame for Computers</button>
+              <button class="btn btn-primary m-2" onclick="showSketches(1);">Show Sketch 1</button>
+              <button class="btn btn-info m-2" onclick="showSketches(2);">Show Sketch 2</button>
+              <button class="btn btn-success m-2" onclick="showSketches(3);">Show Sketch 3</button>
+              <button class="btn btn-success m-2" onclick="showSketches(4);">Show Sketch 4</button>
             </div>
           </div>
 
-          <div id="prototype-img" class="text-center" style="width: 100%">
+          <div id="sketch-img" class="text-center" style="width: 50%">
             <br />
-            <img class="prototype-img rounded mb-5" src="img/Phone.png" alt="Phone Wireframe" />
+            <img class="sketch-img rounded mb-5" src="img/sketch_1.jpg" alt="Phone Wireframe" />
             <br />
           </div>
         </div>
