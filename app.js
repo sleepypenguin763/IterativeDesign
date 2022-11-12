@@ -9,7 +9,7 @@ const showSketches = (num) => {
 
   let div = document.createElement("div");
   div.setAttribute("class", "text-center");
-  div.setAttribute("style", "width:100%");
+  div.setAttribute("style", "w-100 mx-auto");
   div.setAttribute("id", "sketch-img");
 
   let img = document.createElement("img");
@@ -31,7 +31,7 @@ const showSketches = (num) => {
       img.alt = "Sketch 4";
       break;
   }
-  img.setAttribute("class", "sketch-img rounded mb-5 w-100");
+  img.setAttribute("class", "sketch-img rounded mb-5 w-75");
 
   div.append(br);
   div.appendChild(img);
